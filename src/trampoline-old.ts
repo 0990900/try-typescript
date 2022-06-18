@@ -44,7 +44,7 @@ const trampolineOf = trampolineOps.builder;
 const done = trampolineOps.done;
 const suspend = trampolineOps.suspend;
 
-export const old = {
+export const trampolineOld = {
   trampolineOf,
   suspend,
   done,
