@@ -6,14 +6,14 @@ type TurtleProgram = Move | Turn | Stop;
 const move =
   (meter: number, next?: TurtleProgram): Move =>
   (path: string[]) => {
-    path.push(`Move ${meter} meter`);
+    path.push(`Move ${meter} meters`);
     next && next(path);
   };
 
 const turn =
   (degree: number, next?: TurtleProgram): Turn =>
   (path: string[]) => {
-    path.push(`Turn ${degree} degree`);
+    path.push(`Turn ${degree} degrees`);
     next && next(path);
   };
 
